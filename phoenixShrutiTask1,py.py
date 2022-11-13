@@ -27,7 +27,7 @@ class librarysys:
         print("total books:" ,s.books) 
 def lib():
     books=['ikigai','silentpateint','python','java']
-    obj=library_management_system(books,"lib")
+    obj=librarysys(books,"lib")
     while(True):
         print("1.Display all the books")
         print("2.Add book")
@@ -41,7 +41,7 @@ def lib():
             name=input("enter book name ")
             obj.add(name)
         elif(c==3):
-            name=input("enter your name ")
+            yrname=input("enter your name ")
             bname=input("enter the book to lend ")
             obj.lend(bname,yrname)     
         elif(c==4):
